@@ -23,7 +23,19 @@ sudo apt-get install texlive-full
 
 ### Windows
 
-Could possibly follow the Linux guide on WSL
+#### WSL
+
+Follow the Linux guide for WSL
+
+#### Non-WSL
+
+Install [Strawberry Perl](https://strawberryperl.com/) and [MikTex](https://miktex.org/howto/install-miktex) using these links or by running
+
+```sh
+choco install miktex strawberryperl -y
+```
+
+Next, follow the instructions for [Installing for VS Code](#vscode-quick-start) but use MikTeX instead of texlive
 
 ## CLI Quick start
 
@@ -51,8 +63,9 @@ export TEXINPUTS=/path/to/the/checkout/jdf/
 
 1. Add the [Latex Workshop](https://github.com/James-Yu/LaTeX-Workshop) Extension
     - Ensure that `texlive` for your OS is installed. See additional instructions in the extensions' README
-1. Use the preview icon (top left) or use the keyboard shortcut (Ctrl + Alt + V). This will open up a live preview.
-1. Once done, use the green play button, or use keyboard shortcut (Ctrl + Alt + B) to build the project and generate PDF.
+2. Use the preview icon (top left) or use the keyboard shortcut (Ctrl + Alt + V). This will open up a live preview.
+3. Once done, use the green play button, or use keyboard shortcut (Ctrl + Alt + B) to build the project and generate PDF.
+4. You can now view the PDF in visual studio code by clicking the book with magnifying glass icon on the top right (🔍)
 
 ## License
 
